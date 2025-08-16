@@ -13,13 +13,13 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
 
   return (
     <div>
-      {/* Background Overlay */}
+      
       <div
         className={`fixed inset-0 ${navOpen} transform transition-all duration-500 right-0 z-[100002] bg-black opacity-70 w-full h-screen`}
         onClick={closeNav}
       ></div>
 
-      {/* Sidebar */}
+      
       <div
         className={`text-white ${navOpen} fixed justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-cyan-800 space-y-6 z-[100050] right-0`}
       >
@@ -31,7 +31,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
           </Link>
         ))}
 
-        {/* Close Button */}
+        
         <CgClose
           onClick={closeNav}
           className="absolute top-[0.7rem] right-[1.4rem] sm:w-8 sm:h-8 w-6 h-6 cursor-pointer"
