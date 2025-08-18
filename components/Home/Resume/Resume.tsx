@@ -9,8 +9,10 @@ const Resume = () => {
       <div className="w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10">
 
         <div>
-          <h1 className='text-3xl sm:text-4xl font-bold text-white'>My Work <span className='text-cyan-200'>Experiences</span></h1>
-          <div className="mt-10">
+          <h1 data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800" className='text-3xl sm:text-4xl font-bold text-white'>My Work <span className='text-cyan-200'>Experiences</span></h1>
+          <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800" className="mt-10">
             <ResumeCard
               Icon={FaCodepen}
               role="MERN-Stack Developer (Intern)"
@@ -24,8 +26,10 @@ const Resume = () => {
         </div>
 
         <div>
-          <h1 className='text-3xl sm:text-4xl font-bold text-white'>My <span className='text-cyan-200'>Education</span></h1>
-          <div className="mt-10">
+          <h1 data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800" className='text-3xl sm:text-4xl font-bold text-white'>My <span className='text-cyan-200'>Education</span></h1>
+          <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800" className="mt-10">
             <ResumeCard
               Icon={BiBadge}
               role="Gautam Buddha University"

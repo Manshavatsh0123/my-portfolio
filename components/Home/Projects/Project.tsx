@@ -4,7 +4,9 @@ import React from 'react'
 const Project = () => {
     return (
         <div className='pt-16 pb-16'>
-            <h1 className="text-center text-2xl sm:text-4xl xl:text-5xl font-bold text-white">
+            <h1 data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="800" className="text-center text-2xl sm:text-4xl xl:text-5xl font-bold text-white">
                 A showcase of my recent <br />
                 <span className="text-cyan-300">full-stack </span> and <span className="text-cyan-300">frontend projects</span>
             </h1>
@@ -16,27 +18,34 @@ const Project = () => {
                     {
                         img: "/images/Project-1.png",
                         title: "Let Us Nudge",
-                        category: "Full-Stack Web Platform | Worked on during internship (Concrete Software Solutions Pvt. Ltd.)"
+                        category: "Full-Stack Web Platform | Worked on during internship (Concrete Software Solutions Pvt. Ltd.)",
+                        animation: { type: "zoom-in", delay: 200 }
                     },
                     {
                         img: "/images/Project-2.png",
                         title: "QuickStay Hotel Booking",
-                        category: "Hotel Booking Web App | Frontend built with React.js & Vite"
+                        category: "Hotel Booking Web App | Frontend built with React.js & Vite",
+                        animation: { type: "zoom-in", delay: 400 }
                     },
                     {
                         img: "/images/Project-4.png",
                         title: "Next Rental Property Platform",
-                        category: "Property Rental Website | Frontend built with Next.js & Tailwind CSS"
+                        category: "Property Rental Website | Frontend built with Next.js & Tailwind CSS",
+                        animation: { type: "flip-left", delay: 600 } // ✅ Card 3 → flips left
                     },
                     {
                         img: "/images/Project-3.png",
                         title: "WanderNest Stay Booking",
-                        category: "Airbnb-like Web App | MERN Stack (Node.js, Express.js, MongoDB, EJS)"
+                        category: "Airbnb-like Web App | MERN Stack (Node.js, Express.js, MongoDB, EJS)",
+                        animation: { type: "zoom-in", delay: 800 }
                     },
                 ].map((project, index) => (
                     <div
                         key={index}
                         className="group cursor-pointer transition-transform duration-300 hover:scale-105"
+                        data-aos={project.animation.type}
+                        data-aos-delay={project.animation.delay}
+                        data-aos-duration="800"
                     >
                         <Image
                             src={project.img}

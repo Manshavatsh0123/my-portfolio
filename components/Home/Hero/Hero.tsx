@@ -11,23 +11,26 @@ const Hero = () => {
             <ParticlesHero />
             <div className="relative flex flex-col z-10 items-center text-center">
 
-                
+
                 <Image
                     src="/images/Mansha01.jpg"
                     width={160}
                     height={160}
                     alt="heroimage"
                     className="rounded-full border-4 border-[#0c0c48aa] shadow-lg"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
                 />
 
-               
-                <h1 className="mt-6 font-bold tracking-wide text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
+
+                <h1 data-aos="fade-up" data-aos-delay="300" className="mt-6 font-bold tracking-wide text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
                     Turning ideas into{" "}
                     <span className="text-cyan-200">digital reality.</span>
                 </h1>
 
-                
-                <h2 className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium flex items-center justify-center">
+
+                <h2 data-aos="fade-up"
+                    data-aos-delay="500" className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl font-medium flex items-center justify-center">
                     Hi, I'm <span className="text-cyan-200 font-bold pl-1">Mansha</span> —
                     I craft modern
                     <span className="text-cyan-200 font-bold pl-2">
@@ -48,8 +51,10 @@ const Hero = () => {
                     </span>
                 </h2>
 
-                
-                <button className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-sm sm:text-base md:text-lg font-medium flex items-center gap-2">
+
+                <button
+                    data-aos="fade-up"
+                    data-aos-delay="700" className="mt-6 sm:mt-8 px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300 cursor-pointer rounded-full text-sm sm:text-base md:text-lg font-medium flex items-center gap-2">
                     <span>See my work</span>
                     <BsArrowRight className="h-5 w-5" />
                 </button>

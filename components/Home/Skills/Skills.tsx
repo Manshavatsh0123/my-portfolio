@@ -52,13 +52,27 @@ const skills = [
 const Skills = () => {
     return (
         <div className="pt-16 pb-16">
-            <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
+            {/* Heading */}
+            <h1 
+                className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="800"
+            >
                 Technical <span className="text-cyan-300">Skills</span>
             </h1>
 
+            {/* Skills Grid */}
             <div className="flex flex-wrap justify-center gap-10 mt-16">
-                {skills.map((skill) => (
-                    <Tilt key={skill.name} scale={1.05} transitionSpeed={400}>
+                {skills.map((skill, index) => (
+                    <Tilt 
+                        key={skill.name} 
+                        scale={1.05} 
+                        transitionSpeed={400}
+                        data-aos={index % 3 === 0 ? "zoom-in" : index % 3 === 1 ? "flip-up" : "fade-up"} 
+                        data-aos-delay={200 + index * 100}
+                        data-aos-duration="800"
+                    >
                         <div className="bg-[#1a1a2e] w-36 sm:w-40 h-44 sm:h-48 rounded-3xl flex flex-col items-center justify-center shadow-lg hover:shadow-cyan-500/40 transition-transform duration-300">
                             <div className="text-4xl sm:text-5xl mb-3">{skill.icon}</div>
                             <p className="text-purple-200 font-medium">{skill.name}</p>
