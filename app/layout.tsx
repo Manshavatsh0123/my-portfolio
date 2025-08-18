@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ResposiveNav from "@/components/Home/Navbar/ResposiveNav";
+import Footer from "@/components/Home/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +28,8 @@ export default function RootLayout({
       >
         <ResposiveNav />
         {children}
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
