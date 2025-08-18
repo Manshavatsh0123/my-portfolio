@@ -11,7 +11,7 @@ const Project = () => {
 
 
 
-            <div className="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+            <div className="w-[90%] md:w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
                 {[
                     {
                         img: "/images/Project-1.png",
